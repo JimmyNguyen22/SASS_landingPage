@@ -1,13 +1,71 @@
 header {
-  .container {
-    .header-img {
+  background: url(../../../img/yellow_top_wave_01.png);
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  position: relative;
+  z-index: 1;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-ogo {
       img {
+        width: 80%;
       }
     }
     .header-nav {
-      nav {
+      padding-left: 20%;
+      padding-top: 16px;
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        align-items: center;
         a {
+          text-decoration: none;
+          @include text($text-xm, $text-semibold, $text-black);
+          &:hover {
+            color: $text-c1-primary;
+          }
         }
+      }
+    }
+    .header-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 22%;
+      .btn-header {
+        transition: all 0.5s;
+        outline: none;
+        display: block;
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          10px 15px,
+          none,
+          50px
+        );
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-white;
+          border: $border;
+        }
+      }
+      .fa-twitter {
+        color: #1d9bf0;
+      }
+      .fa-facebook {
+        color: #4867aa;
+      }
+      .fa-youtube-play {
+        color: #ed352d;
+      }
+      .fa-instagram {
+        color: #bd3187;
       }
     }
   }

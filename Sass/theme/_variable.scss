@@ -1,0 +1,40 @@
+// Khai báo biến
+// text
+// font-size
+$text-xs: 10px;
+$text-xm: 14px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+// font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+// color
+$text-black: #000;
+$text-white: #fff;
+$text-c1-primary: #b61984;
+// bg
+$bg-none: #000;
+$bg-white: #fff;
+$bg-c1-primary: #b61984;
+$border: 1px solid#b61984;
+// mixin
+@mixin text($fs, $fw, $c) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+}
+
+@mixin button($fs, $fw, $c, $bg-color, $pd, $bd, $br) {
+  @include text($fs, $fw, $c);
+  background: $bg-color;
+  padding: $pd;
+  border: $bd;
+  border-radius: $br;
+}
