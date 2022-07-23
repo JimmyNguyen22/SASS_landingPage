@@ -1,37 +1,46 @@
 .carousel {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: -30px;
-  width: 86%;
-  .carousel-left {
-    span {
-      @include text($text-xl, $text-semibold, $text-c1-primary);
-    }
-    h1 {
-      @include text(90px, $text-regular, $text-black);
-    }
-    .btn-carousel {
-      @include button(
-        $text-xm,
-        $text-semibold,
-        $text-white,
-        $bg-c1-primary,
-        15px 35px,
-        none,
-        50px
-      );
-      text-transform: uppercase;
-      outline: none;
-      display: inline-block;
-      &:hover {
-        color: $text-c1-primary;
-        background-color: $bg-white;
-        border: $border;
-        transition: all 0.5s;
+  .carousel_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .carousel-left {
+      span {
+        @include text($text-xl, $text-semibold, $text-c1-primary);
+      }
+      h1 {
+        @include text(90px, $text-regular, $text-black);
+      }
+      .btn-carousel {
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          15px 35px,
+          none,
+          50px
+        );
+        text-transform: uppercase;
+        outline: none;
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-white;
+          border: $border;
+          transition: all 0.5s;
+        }
       }
     }
-  }
-  .carousel-right {
+    .carousel-right {
+      .carousel-img {
+        .img-hello {
+        }
+        .img-ciao {
+        }
+        .img-bonjour {
+        }
+        .img-guten {
+        }
+      }
+    }
   }
 }

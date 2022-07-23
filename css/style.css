@@ -16,15 +16,16 @@ header {
   background-position: center;
   background-size: cover;
   height: 240px;
-  position: relative;
-  z-index: 1;
 }
 header .header {
   display: flex;
-  justify-content: space-between;
+  gap: 3rem;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  margin-left: 8rem;
 }
-header .header .header-ogo img {
+header .header a .header-img {
   width: 80%;
 }
 header .header .header-nav {
@@ -48,14 +49,12 @@ header .header .header-nav ul a:hover {
 }
 header .header .header-link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 22%;
+  gap: 1rem;
 }
 header .header .header-link .btn-header {
   transition: all 0.5s;
   outline: none;
-  display: block;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
@@ -71,35 +70,37 @@ header .header .header-link .btn-header:hover {
 }
 header .header .header-link .fa-twitter {
   color: #1d9bf0;
+  margin: 0 0.5rem;
 }
 header .header .header-link .fa-facebook {
   color: #4867aa;
+  margin: 0 0.5rem;
 }
 header .header .header-link .fa-youtube-play {
   color: #ed352d;
+  margin: 0 0.5rem;
 }
 header .header .header-link .fa-instagram {
   color: #bd3187;
+  margin: 0 0.5rem;
 }
 
-.carousel {
+.carousel .carousel_item {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: -30px;
-  width: 86%;
+  justify-content: space-around;
 }
-.carousel .carousel-left span {
+.carousel .carousel_item .carousel-left span {
   font-size: 18px;
   font-weight: 600;
   color: #b61984;
 }
-.carousel .carousel-left h1 {
+.carousel .carousel_item .carousel-left h1 {
   font-size: 90px;
   font-weight: 400;
   color: #000;
 }
-.carousel .carousel-left .btn-carousel {
+.carousel .carousel_item .carousel-left .btn-carousel {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
@@ -109,9 +110,8 @@ header .header .header-link .fa-instagram {
   border-radius: 50px;
   text-transform: uppercase;
   outline: none;
-  display: inline-block;
 }
-.carousel .carousel-left .btn-carousel:hover {
+.carousel .carousel_item .carousel-left .btn-carousel:hover {
   color: #b61984;
   background-color: #fff;
   border: 1px solid #b61984;
