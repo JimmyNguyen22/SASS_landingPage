@@ -13,9 +13,10 @@
 
 header {
   background: url(../../../img/yellow_top_wave_01.png);
-  background-position: center;
-  background-size: cover;
+  background-position: left top;
+  background-size: contain;
   height: 240px;
+  background-repeat: no-repeat;
 }
 header .header {
   display: flex;
@@ -29,14 +30,13 @@ header .header a .header-img {
   width: 80%;
 }
 header .header .header-nav {
-  padding-left: 20%;
+  padding-left: 15rem;
   padding-top: 16px;
 }
 header .header .header-nav ul {
   display: flex;
   list-style: none;
   gap: 40px;
-  align-items: center;
 }
 header .header .header-nav ul a {
   text-decoration: none;
@@ -51,6 +51,8 @@ header .header .header-link {
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: absolute;
+  right: -1rem;
 }
 header .header .header-link .btn-header {
   transition: all 0.5s;
@@ -60,12 +62,12 @@ header .header .header-link .btn-header {
   color: #fff;
   background: #b61984;
   padding: 10px 15px;
-  border: none;
+  border: 1px solid #b61984;
   border-radius: 50px;
 }
 header .header .header-link .btn-header:hover {
   color: #b61984;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #b61984;
 }
 header .header .header-link .fa-twitter {
@@ -85,10 +87,13 @@ header .header .header-link .fa-instagram {
   margin: 0 0.5rem;
 }
 
+.carousel {
+  top: -290px;
+}
 .carousel .carousel_item {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .carousel .carousel_item .carousel-left span {
   font-size: 18px;
@@ -105,15 +110,85 @@ header .header .header-link .fa-instagram {
   font-weight: 600;
   color: #fff;
   background: #b61984;
-  padding: 15px 35px;
-  border: none;
+  padding: 12px 30px;
+  border: 1px solid #b61984;
   border-radius: 50px;
   text-transform: uppercase;
   outline: none;
+  margin-top: 1rem;
 }
 .carousel .carousel_item .carousel-left .btn-carousel:hover {
   color: #b61984;
   background-color: #fff;
   border: 1px solid #b61984;
   transition: all 0.5s;
+}
+.carousel .carousel_item .carousel-right {
+  z-index: 1;
+}
+.carousel .carousel_item .carousel-right .img-girl {
+  width: 130%;
+  margin-left: -25%;
+}
+.carousel .carousel_item .carousel-right .carousel-img .img-hello {
+  top: 8rem;
+  right: 15rem;
+  position: absolute;
+}
+.carousel .carousel_item .carousel-right .carousel-img .img-ciao {
+  top: 22rem;
+  right: 6rem;
+  position: absolute;
+}
+.carousel .carousel_item .carousel-right .carousel-img .img-bonjour {
+  top: 39rem;
+  right: 9rem;
+  position: absolute;
+}
+.carousel .carousel_item .carousel-right .carousel-img .img-guten {
+  top: 39rem;
+  right: 42rem;
+  position: absolute;
+}
+
+.description-bg {
+  position: relative;
+  top: -39rem;
+  background-image: url(../../../img/purple_bottom_wave_01.png);
+  background-position: center;
+  background-size: cover;
+  height: 26rem;
+}
+
+.description {
+  position: relative;
+  top: -40rem;
+  background-color: #dcd1f2;
+}
+.description .description-list .description-item {
+  display: flex;
+  gap: 1.5rem;
+}
+.description .description-list .description-item .description-icon a i {
+  font-size: 50px;
+  color: #000;
+}
+.description .description-list .description-item .description-icon a:hover {
+  color: #b61984;
+}
+.description .description-list .description-item .description-content {
+  width: 18rem;
+}
+.description .description-list .description-item .description-content a {
+  text-decoration: none;
+}
+.description .description-list .description-item .description-content a h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b61984;
+}
+.description .description-list .description-item .description-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
 }

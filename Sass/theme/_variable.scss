@@ -22,7 +22,9 @@ $text-c1-primary: #b61984;
 // bg
 $bg-none: #000;
 $bg-white: #fff;
+$bg-transparent: transparent;
 $bg-c1-primary: #b61984;
+$bg-c1-secondary: #dcd1f2;
 $border: 1px solid#b61984;
 // mixin
 @mixin text($fs, $fw, $c) {

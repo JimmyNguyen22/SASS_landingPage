@@ -1,4 +1,45 @@
+.description-bg {
+  position: relative;
+  top: -39rem;
+  background-image: url(../../../img/purple_bottom_wave_01.png);
+  background-position: center;
+  background-size: cover;
+  height: 26rem;
+}
 .description {
-  .col {
+  position: relative;
+  top: -40rem;
+  background-color: $bg-c1-secondary;
+  .description-list {
+    .description-item {
+      display: flex;
+      gap: 1.5rem;
+      .description-icon {
+        a {
+          i {
+            font-size: $text-5xl;
+            color: $text-black;
+          }
+          &:hover {
+            color: $text-c1-primary;
+          }
+        }
+      }
+
+      .description-content {
+        width: 18rem;
+        a {
+          text-decoration: none;
+          h6 {
+            @include text($text-xm, $text-semibold, $text-c1-primary);
+          }
+        }
+        p {
+          @include text($text-xm, $text-regular, $text-black);
+        }
+        a {
+        }
+      }
+    }
   }
 }
