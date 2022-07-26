@@ -95,6 +95,9 @@ header .header .header-link .fa-instagram {
   align-items: center;
   justify-content: space-between;
 }
+.carousel .carousel_item .carousel-left {
+  margin-bottom: 4rem;
+}
 .carousel .carousel_item .carousel-left span {
   font-size: 18px;
   font-weight: 600;
@@ -116,6 +119,8 @@ header .header .header-link .fa-instagram {
   text-transform: uppercase;
   outline: none;
   margin-top: 1rem;
+  z-index: 2;
+  position: absolute;
 }
 .carousel .carousel_item .carousel-left .btn-carousel:hover {
   color: #b61984;
@@ -306,4 +311,7 @@ header .header .header-link .fa-instagram {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+}
+.card-session .card-session-list .card-session-item {
+  border: none;
 }

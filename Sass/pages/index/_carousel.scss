@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     .carousel-left {
+      margin-bottom: 4rem;
       span {
         @include text($text-xl, $text-semibold, $text-c1-primary);
       }
@@ -23,6 +24,8 @@
         text-transform: uppercase;
         outline: none;
         margin-top: 1rem;
+        z-index: 2;
+        position: absolute;
         &:hover {
           color: $text-c1-primary;
           background-color: $bg-white;
