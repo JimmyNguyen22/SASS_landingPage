@@ -1,5 +1,4 @@
 .carousel {
-  top: -290px;
   .carousel_item {
     display: flex;
     align-items: center;
@@ -37,25 +36,27 @@
       .img-girl {
         width: 130%;
         margin-left: -25%;
+        position: relative;
+        top: -3rem;
       }
       .carousel-img {
         .img-hello {
-          top: 8rem;
+          top: 5rem;
           right: 15rem;
           position: absolute;
         }
         .img-ciao {
-          top: 22rem;
-          right: 6rem;
+          top: 19rem;
+          right: 7rem;
           position: absolute;
         }
         .img-bonjour {
-          top: 39rem;
-          right: 9rem;
+          top: 36.5rem;
+          right: 8.5rem;
           position: absolute;
         }
         .img-guten {
-          top: 39rem;
+          top: 36rem;
           right: 42rem;
           position: absolute;
         }

@@ -1,0 +1,93 @@
+.content {
+  background-image: url(../../../img/purple_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .content-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content-img {
+      width: 43%;
+      margin-left: 1rem;
+    }
+    .content-left {
+      width: 35%;
+      top: 4em;
+      left: 11em;
+      position: absolute;
+      .content-item {
+        img {
+        }
+        h5 {
+          width: 83%;
+          @include text($text-2xl, $text-regular, $text-black);
+          line-height: 3rem;
+          font-style: italic;
+          padding: 1rem 0;
+        }
+        span {
+          @include text($text-xm, $text-semibold, $text-c1-primary);
+        }
+        p {
+        }
+      }
+    }
+    .content-right {
+      padding-right: 6rem;
+      width: 50%;
+      h6 {
+        @include text($text-base, $text-semibold, $text-c1-primary);
+      }
+      h1 {
+        @include text($text-5xl, $text-bold, $text-black);
+        width: 50%;
+      }
+      p {
+        @include text($text-base, $text-regular, $text-black);
+        width: 87%;
+        line-height: 2rem;
+        margin: 1em em 0;
+        margin-bottom: 3.7rem;
+      }
+      button {
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          12px 30px,
+          $border,
+          50px
+        );
+        outline: none;
+        position: absolute;
+        bottom: 6rem;
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-white;
+          border: $border;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: $text-c1-primary;
+}
+.slick-dots li.slick-active button:before {
+  color: $text-c1-primary;
+}
+.slick-dots {
+  left: -0.5rem;
+  width: 25%;
+  text-align: left;
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

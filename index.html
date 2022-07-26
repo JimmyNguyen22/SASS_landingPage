@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- fa -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -133,6 +136,91 @@
             </div>
         </div>
     </section>
+    <section class="content">
+        <div class=" content-list">
+            <img class="content-img" src="./img/speech_bubble_outline_04.png" alt="">
+            <div class="content-left">
+                <div class="content-item">
+                    <img src="./img/testimonials_01.png" alt="...">
+                    <H5>„Tabula language school is a MUST for anyone interested in bettering their convesational
+                        skills.”
+                    </H5>
+                    <span>LOUREAL SIMMONS</span>
+                    <p>Student</p>
+                </div>
+                <div class="content-item">
+                    <img src="./img/testimonials_02.png" alt="...">
+                    <H5>„Ramps fashion axe shaman food truck, distillery tilde squid narwhal bitters direct trade.”
+                    </H5>
+                    <span>RICARDO LOGAN</span>
+                    <p>Student</p>
+                </div>
+                <div class="content-item">
+                    <img src="./img/testimonials_03.png" alt="...">
+                    <H5>„Beard polaroid 8-bit hell of green red juice whatever cray gluten-free denim racing
+                        bicycle.”
+                    </H5>
+                    <span>LOUREAL SIMMONS</span>
+                    <p>Student</p>
+                </div>
+                <div class="content-item">
+                    <img src="./img/testimonials_04.png" alt="...">
+                    <H5>„Cred tacos celiac af. Health goth actually polaroid plaid, distillery blog fanny pack
+                        truffaut.”
+                    </H5>
+                    <span>LOUREAL SIMMON</span>
+                    <p>Student</p>
+                </div>
+            </div>
+            <div class="content-right">
+                <h6>ABOUT US</h6>
+                <h1>Language School</h1>
+                <p>Normcore proident sed selvage. Post-ironic ugh master cleanse etsy you probably haven't heard of them
+                    mustache mollit readymade kombucha pug minim veniam intelligentsia etsy venmo echo park.
+                </p>
+                <button>APPLY TODAY</button>
+            </div>
+        </div>
+    </section>
+    <section class="card-session">
+        <div class="container card-session-list">
+            <div class="card  card-session-item">
+                <img src="./img/inner_image_01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span>COURSES</span>
+                    <h5 class="card-title">Weekend Courses
+                    </h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card  card-session-item">
+                <img src="./img/inner_image_02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span>COURSES</span>
+                    <h5 class="card-title">Beginners Level</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card  card-session-item">
+                <img src="./img/inner_image_03.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span>COURSES</span>
+                    <h5 class="card-title">Business English
+                    </h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+
+    </section>
     <footer>
 
     </footer>
@@ -148,6 +236,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.content-left').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    </script>
+
 </body>
 
 </html>

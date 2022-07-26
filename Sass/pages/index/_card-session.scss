@@ -1,0 +1,13 @@
+.card-session {
+  padding: 5rem 0;
+  .card-session-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    .card-session-item {
+      img {
+      }
+    }
+  }
+}
