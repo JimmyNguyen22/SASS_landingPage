@@ -1,0 +1,94 @@
+.courses {
+  background: url(../../../img/white_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $bg-c1-secondary;
+  .courses-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .courses-left {
+      .courses-h6 {
+        @include text($text-base, $text-semibold, $text-c1-primary);
+      }
+      .courses-title {
+        @include text($text-5xl, $text-bold, $text-black);
+        width: 75%;
+      }
+      .courses-text {
+        @include text($text-xm, $text-regular, $text-black);
+        width: 75%;
+      }
+      .courses-button {
+        .btn-courses {
+          @include button(
+            $text-xm,
+            $text-semibold,
+            $text-white,
+            $bg-c1-primary,
+            12px 30px,
+            $border,
+            50px
+          );
+          text-transform: uppercase;
+          outline: none;
+          margin-top: 2rem;
+          margin-right: 1rem;
+          &:hover {
+            color: $text-c1-primary;
+            background-color: $bg-white;
+            border: $border;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    .courses-right {
+      .courses-img {
+        width: 37rem;
+      }
+    }
+  }
+}
+
+.seo {
+  background-color: $bg-c1-secondary;
+  .seo-list {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    .seo-left {
+    }
+    .seo-right {
+      p {
+      }
+      h1 {
+      }
+      .seo-card-list {
+        width: 33rem;
+        margin: 2rem 0;
+
+        .seo-card-item {
+          background-color: $bg-c1-secondary;
+          border: none;
+          border-bottom: 1px solid rgb(0 0 0 / 20%);
+          .seo-card-header {
+            background-color: $bg-c1-secondary;
+          }
+          .seo-card-bot {
+            .seo-card-body {
+              background-color: $bg-c1-secondary;
+            }
+          }
+        }
+      }
+      .btn-seo {
+      }
+    }
+  }
+  .seo-img {
+    img {
+      width: 100%;
+    }
+  }
+}

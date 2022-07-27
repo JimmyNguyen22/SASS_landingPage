@@ -7,7 +7,45 @@
     gap: 3rem;
     .card-session-item {
       border: none;
-      img {
+      .card-session-img {
+        border-radius: 10px 10px 0 0;
+      }
+      .card-session-body {
+        padding-left: 3rem;
+        .card-session-color {
+          left: -1rem;
+          bottom: 8rem;
+          transform: rotate(90deg);
+          border-top-left-radius: 100% 200%;
+          border-top-right-radius: 100% 200%;
+          width: 4rem;
+          height: 2rem;
+          background: $bg-c1-primary;
+          position: absolute;
+          border: none;
+        }
+        .card-session-span {
+          @include text($text-xm, $text-semibold, $text-black);
+        }
+
+        .card-session-title {
+          @include text($text-3xl, $text-bold, $text-black);
+        }
+        .card-session-text {
+          @include text($text-xm, $text-regular, $text-black);
+        }
+        .card-session-link {
+          @include text($text-xm, $text-semibold, $text-c1-primary);
+          text-transform: uppercase;
+          text-decoration: none;
+
+          .card-session-icon {
+            margin-left: 0.5rem;
+          }
+          &:hover {
+            color: $text-black;
+          }
+        }
       }
     }
   }

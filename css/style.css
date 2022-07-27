@@ -176,35 +176,47 @@ header .header .header-link .fa-instagram {
   display: flex;
   gap: 1.5rem;
 }
-.description .description-list .description-item .description-icon a i {
+.description .description-list .description-item .description-icon .description-link {
   font-size: 50px;
   color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
 }
-.description .description-list .description-item .description-icon a::before {
-  content: "";
-}
-.description .description-list .description-item .description-icon::before {
-  color: #fff;
+.description .description-list .description-item .description-icon .description-link:hover {
+  color: #b61984;
 }
 .description .description-list .description-item .description-content {
   width: 18rem;
 }
-.description .description-list .description-item .description-content a {
+.description .description-list .description-item .description-content .description-content-a {
   text-decoration: none;
-}
-.description .description-list .description-item .description-content a h6 {
+  transition: all 0.3s;
   font-size: 14px;
   font-weight: 600;
   color: #b61984;
 }
-.description .description-list .description-item .description-content a:hover {
-  color: #fff;
+.description .description-list .description-item .description-content .description-content-a:hover {
+  color: #000;
 }
-.description .description-list .description-item .description-content p {
+.description .description-list .description-item .description-content .description-text {
   font-size: 14px;
   font-weight: 400;
   color: #000;
 }
+.description .description-list .description-item .description-content .description-content-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b61984;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.description .description-list .description-item .description-content .description-content-link i {
+  margin-left: 0.5rem;
+}
+.description .description-list .description-item .description-content .description-content-link:hover {
+  color: #000;
+}
+
 .content {
   background-image: url(../../../img/purple_top_wave_01.png);
   background-repeat: no-repeat;
@@ -314,4 +326,128 @@ header .header .header-link .fa-instagram {
 }
 .card-session .card-session-list .card-session-item {
   border: none;
+}
+.card-session .card-session-list .card-session-item .card-session-img {
+  border-radius: 10px 10px 0 0;
+}
+.card-session .card-session-list .card-session-item .card-session-body {
+  padding-left: 3rem;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-color {
+  left: -1rem;
+  bottom: 8rem;
+  transform: rotate(90deg);
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  width: 4rem;
+  height: 2rem;
+  background: #b61984;
+  position: absolute;
+  border: none;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b61984;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-link .card-session-icon {
+  margin-left: 0.5rem;
+}
+.card-session .card-session-list .card-session-item .card-session-body .card-session-link:hover {
+  color: #000;
+}
+
+.courses {
+  background: url(../../../img/white_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #dcd1f2;
+}
+.courses .courses-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses .courses-list .courses-left .courses-h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b61984;
+}
+.courses .courses-list .courses-left .courses-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  width: 75%;
+}
+.courses .courses-list .courses-left .courses-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  width: 75%;
+}
+.courses .courses-list .courses-left .courses-button .btn-courses {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #b61984;
+  padding: 12px 30px;
+  border: 1px solid #b61984;
+  border-radius: 50px;
+  text-transform: uppercase;
+  outline: none;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.courses .courses-list .courses-left .courses-button .btn-courses:hover {
+  color: #b61984;
+  background-color: #fff;
+  border: 1px solid #b61984;
+  transition: all 0.5s;
+}
+.courses .courses-list .courses-right .courses-img {
+  width: 37rem;
+}
+
+.seo {
+  background-color: #dcd1f2;
+}
+.seo .seo-list {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.seo .seo-list .seo-right .seo-card-list {
+  width: 33rem;
+  margin: 2rem 0;
+}
+.seo .seo-list .seo-right .seo-card-list .seo-card-item {
+  background-color: #dcd1f2;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.seo .seo-list .seo-right .seo-card-list .seo-card-item .seo-card-header {
+  background-color: #dcd1f2;
+}
+.seo .seo-list .seo-right .seo-card-list .seo-card-item .seo-card-bot .seo-card-body {
+  background-color: #dcd1f2;
+}
+.seo .seo-img img {
+  width: 100%;
 }

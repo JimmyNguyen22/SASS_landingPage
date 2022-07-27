@@ -16,36 +16,40 @@
       display: flex;
       gap: 1.5rem;
       .description-icon {
-        a {
-          i {
-            font-size: $text-5xl;
-            color: $text-black;
+        .description-link {
+          font-size: $text-5xl;
+          color: $text-black;
+          text-decoration: none;
+          transition: all 0.3s;
+          &:hover {
+            color: $text-c1-primary;
           }
-          &::before {
-            content: "";
-          }
-        }
-        &::before {
-          color: $text-white;
         }
       }
 
       .description-content {
         width: 18rem;
-        a {
+        .description-content-a {
           text-decoration: none;
-          h6 {
-            @include text($text-xm, $text-semibold, $text-c1-primary);
-          }
+          transition: all 0.3s;
+          @include text($text-xm, $text-semibold, $text-c1-primary);
           &:hover {
-            color: $text-white;
+            color: $text-black;
           }
         }
-
-        p {
+        .description-text {
           @include text($text-xm, $text-regular, $text-black);
         }
-        a {
+        .description-content-link {
+          @include text($text-xm, $text-semibold, $text-c1-primary);
+          text-decoration: none;
+          transition: all 0.3s;
+          i {
+            margin-left: 0.5rem;
+          }
+          &:hover {
+            color: $text-black;
+          }
         }
       }
     }
