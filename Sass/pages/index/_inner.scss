@@ -1,0 +1,72 @@
+.inner-bg-top {
+  background-color: $bg-c3-secondary;
+}
+.inner {
+  background-color: $bg-c3-secondary;
+  text-align: center;
+  height: 28rem;
+  .container {
+    .inner-list {
+      align-items: center;
+      gap: 3rem;
+      .inner-item {
+        background-color: $bg-c3-secondary;
+        border: none;
+        .inner-text {
+          @include text($text-base, $text-semibold, $text-c1-primary);
+          &::before {
+          }
+        }
+        .inner-price {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: center;
+          align-items: center;
+          @include text($text-6xl, $text-bold, $text-black);
+          span {
+            font-size: $text-3xl;
+          }
+        }
+        .inner-card-body {
+          .inner-body {
+            @include text($text-xm, $text-semibold, $text-black);
+          }
+        }
+      }
+      .inner-item-main {
+        padding: 3rem 0 5rem;
+        box-shadow: rgb(0 0 0 / 20%) 4px 15px 25px -15px;
+        background-color: $bg-white;
+        border-radius: 10px;
+        .inner-card-top {
+          .inner-text {
+            @include text($text-base, $text-semibold, $text-c1-primary);
+          }
+          .inner-price {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            @include text($text-6xl, $text-bold, $text-black);
+            span {
+              font-size: $text-3xl;
+            }
+          }
+        }
+        .inner-card-body {
+          .inner-body {
+            @include text($text-xm, $text-semibold, $text-black);
+            &::before {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+    .inner-img {
+    }
+  }
+}
+.inner-bg-bot {
+  background-color: $bg-c3-secondary;
+}

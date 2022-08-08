@@ -1,0 +1,129 @@
+.buy {
+  .buy-list {
+    background-color: $bg-c1-primary;
+    border-radius: 2rem;
+    height: 441px;
+    position: relative;
+    .buy-left {
+      img {
+        position: absolute;
+        left: -8rem;
+        top: -2rem;
+      }
+      .buy-content {
+        position: absolute;
+        top: 7rem;
+        left: 5rem;
+        .buy-text {
+          @include text($text-xm, $text-regular, $text-white);
+        }
+        .buy-title {
+          @include text($text-3xl, $text-semibold, $text-white);
+        }
+        .buy-price {
+          @include text($text-5xl, $text-bold, $text-white);
+        }
+        .buy-btn {
+          margin-top: 2rem;
+          transition: all 0.5s;
+          outline: none;
+          @include button(
+            $text-xm,
+            $text-semibold,
+            $text-c1-primary,
+            $bg-white,
+            15px 30px,
+            $border,
+            50px
+          );
+          &:hover {
+            color: $text-white;
+            background-color: $bg-transparent;
+            border: 1px solid $bg-white;
+          }
+        }
+      }
+    }
+    .buy-right {
+      img {
+        position: absolute;
+        top: -2rem;
+        right: 1rem;
+      }
+    }
+  }
+}
+
+.event {
+  padding-top: 8rem;
+  .container {
+    .event-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      .event-title {
+        @include text($text-6xl, $text-bold, $text-black);
+      }
+      .event-btn {
+        transition: all 0.5s;
+        outline: none;
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          15px 30px,
+          $border,
+          50px
+        );
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-white;
+          border: $border;
+        }
+      }
+    }
+    .event-list {
+      gap: 3rem;
+      .event-item {
+        border: none;
+        transition: all 0.5s;
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 0 7px 1px #888888;
+        }
+        img {
+          border-radius: 10px 10px 0 0;
+        }
+        .event-card-body {
+          .event-card-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            span {
+              border-right: 1px solid gray;
+
+              @include text($text-2xl, $text-bold, $text-c1-primary);
+            }
+            h2 {
+              @include text($text-3xl, $text-bold, $text-black);
+              padding-left: 1rem;
+              width: 88%;
+            }
+          }
+          .event-card-text {
+            @include text($text-base, $text-regular, $text-black);
+          }
+          a {
+            text-decoration: none;
+            @include text($text-base, $text-semibold, $text-c1-primary);
+            &:hover {
+              color: $text-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

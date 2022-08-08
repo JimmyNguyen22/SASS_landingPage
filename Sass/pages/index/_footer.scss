@@ -1,0 +1,195 @@
+.form {
+  position: relative;
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form-left {
+      img {
+      }
+    }
+    .form-right {
+      background-color: $bg-white;
+      box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+      padding: 5rem 2rem;
+      border-radius: 10px;
+      width: 33%;
+      .form-title {
+        @include text($text-3xl, $text-semibold, $text-black);
+      }
+      .form1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        color: $text-c1-primary;
+        .icon1 {
+          position: absolute;
+          right: 30.5rem;
+          z-index: 1;
+        }
+        .input1 {
+          position: relative;
+          border-radius: 50px;
+        }
+        .icon2 {
+          position: absolute;
+          right: 19rem;
+        }
+        .input2 {
+          border-radius: 50px;
+        }
+      }
+      .form2 {
+        position: relative;
+        color: $text-c1-primary;
+        .icon3 {
+          position: absolute;
+          right: 19.7rem;
+          top: 11px;
+        }
+        .input3 {
+          padding-left: 2rem;
+          border-radius: 50px;
+        }
+      }
+      .form3 {
+        position: relative;
+        color: $text-c1-primary;
+        .icon4 {
+          position: absolute;
+          top: 9px;
+          right: 19.9rem;
+        }
+        .form-area {
+          height: 90px;
+        }
+      }
+      .form-btn {
+        transition: all 0.5s;
+        outline: none;
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          15px 50px,
+          $border,
+          50px
+        );
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-white;
+          border: $border;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  .footer-img {
+    position: absolute;
+    top: -20rem;
+  }
+
+  .footer {
+    top: 6rem;
+    left: 4.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    .footer-item1 {
+      @include text($text-base, $text-regular, $text-white);
+      h4 {
+        @include text($text-3xl, $text-semibold, $text-white);
+      }
+      ul {
+        list-style: none;
+        li {
+          padding: 10px 0;
+          i {
+            padding-right: 1rem;
+          }
+        }
+      }
+      .footer-icon {
+        i {
+          padding-right: 1rem;
+          cursor: pointer;
+          &:hover {
+            color: $text-black;
+          }
+        }
+      }
+    }
+    .footer-item {
+      h4 {
+        @include text($text-3xl, $text-semibold, $text-white);
+      }
+      ul {
+        list-style: none;
+        li {
+          padding: 10px 0;
+          a {
+            text-decoration: none;
+            @include text($text-base, $text-regular, $text-white);
+          }
+        }
+      }
+    }
+    .footer-item2 {
+      h4 {
+        @include text($text-3xl, $text-semibold, $text-white);
+      }
+      .footer-btn1 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        button {
+          transition: all 0.5s;
+          outline: none;
+          @include button(
+            $text-xm,
+            $text-semibold,
+            $text-white,
+            $bg-c1-primary,
+            15px 50px,
+            $border,
+            50px
+          );
+          &:hover {
+            color: $text-c1-primary;
+            background-color: $bg-white;
+            border: $border;
+          }
+        }
+      }
+      .footer-btn2 {
+        button {
+          transition: all 0.5s;
+          outline: none;
+          @include button(
+            $text-xm,
+            $text-semibold,
+            $text-c1-primary,
+            $bg-white,
+            15px 50px,
+            $border,
+            50px
+          );
+          &:hover {
+            color: $text-white;
+            background-color: $bg-c1-primary;
+            border: $border;
+          }
+        }
+      }
+    }
+  }
+  .footer-bg {
+    padding-top: 3.5rem;
+  }
+}

@@ -16,11 +16,31 @@
         width: 75%;
       }
       .courses-text {
-        @include text($text-xm, $text-regular, $text-black);
+        @include text($text-base, $text-regular, $text-black);
         width: 75%;
       }
       .courses-button {
         .btn-courses {
+          @include button(
+            $text-xm,
+            $text-semibold,
+            $text-c1-primary,
+            $bg-transparent,
+            12px 30px,
+            $border,
+            50px
+          );
+          text-transform: uppercase;
+          outline: none;
+          margin-right: 1rem;
+          &:hover {
+            color: $text-white;
+            background-color: $bg-c1-primary;
+            border: $border;
+            transition: all 0.5s;
+          }
+        }
+        .btn-courses2 {
           @include button(
             $text-xm,
             $text-semibold,
@@ -32,13 +52,15 @@
           );
           text-transform: uppercase;
           outline: none;
-          margin-top: 2rem;
           margin-right: 1rem;
           &:hover {
             color: $text-c1-primary;
-            background-color: $bg-white;
+            background-color: $bg-transparent;
             border: $border;
             transition: all 0.5s;
+          }
+          i {
+            padding-right: 0.5rem;
           }
         }
       }
@@ -53,16 +75,25 @@
 
 .seo {
   background-color: $bg-c1-secondary;
+  position: relative;
+  padding: 3rem 0;
   .seo-list {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: 5rem;
-    align-items: center;
+
     .seo-left {
     }
     .seo-right {
       p {
+        @include text($text-base, $text-semibold, $text-c1-primary);
       }
       h1 {
+        @include text($text-5xl, $text-semibold, $text-black);
+      }
+      .seo-text {
+        @include text($text-base, $text-regular, $text-black);
       }
       .seo-card-list {
         width: 33rem;
@@ -74,6 +105,23 @@
           border-bottom: 1px solid rgb(0 0 0 / 20%);
           .seo-card-header {
             background-color: $bg-c1-secondary;
+            padding-left: 0;
+            .seo-card-btn {
+              padding-left: 0;
+              position: relative;
+              @include text($text-base, $text-semibold, $text-c1-primary);
+              text-decoration: none;
+              i {
+                font-size: $text-2xl;
+                color: $text-black;
+                margin-right: 1rem;
+              }
+              .seo-card-icon {
+                position: absolute;
+                top: 8px;
+                right: -30px;
+              }
+            }
           }
           .seo-card-bot {
             .seo-card-body {
@@ -83,10 +131,29 @@
         }
       }
       .btn-seo {
+        transition: all 0.5s;
+        outline: none;
+        text-transform: uppercase;
+        @include button(
+          $text-xm,
+          $text-semibold,
+          $text-white,
+          $bg-c1-primary,
+          15px 30px,
+          $border,
+          50px
+        );
+        &:hover {
+          color: $text-c1-primary;
+          background-color: $bg-transparent;
+          border: $border;
+        }
       }
     }
   }
   .seo-img {
+    position: absolute;
+    bottom: 0;
     img {
       width: 100%;
     }

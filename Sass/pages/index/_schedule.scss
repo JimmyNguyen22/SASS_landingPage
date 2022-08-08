@@ -1,0 +1,64 @@
+.schedule {
+  .schedule-list {
+    text-align: center;
+    .schedule-title {
+      padding-bottom: 3rem;
+
+      @include text($text-6xl, $text-bold, $text-black);
+    }
+    .schedule-card {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .schedule-item {
+        border: none;
+        background-color: $bg-c2-secondary;
+        width: 30%;
+        box-shadow: 4px 15px 25px -15px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        .card-img-top {
+        }
+        .card-schedule {
+          position: absolute;
+          top: 2.5rem;
+          .card-title {
+            @include text($text-xm, $text-regular, $text-white);
+          }
+          .card-text {
+            @include text($text-3xl, $text-semibold, $text-white);
+          }
+        }
+        .card-ul {
+          li {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: $bg-c2-secondary;
+            display: flex;
+            justify-content: space-between;
+            @include text($text-xm, $text-semibold, $text-black);
+          }
+        }
+      }
+    }
+    .schedule-btn {
+      margin: 3rem;
+      transition: all 0.5s;
+      outline: none;
+      @include button(
+        $text-xm,
+        $text-semibold,
+        $text-white,
+        $bg-c1-primary,
+        15px 30px,
+        $border,
+        50px
+      );
+      &:hover {
+        color: $text-c1-primary;
+        background-color: $bg-transparent;
+        border: $border;
+      }
+    }
+  }
+}

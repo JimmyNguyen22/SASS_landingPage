@@ -6,7 +6,12 @@
     align-items: center;
     gap: 3rem;
     .card-session-item {
+      transition: all 0.5s;
       border: none;
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 7px 1px #888888;
+      }
       .card-session-img {
         border-radius: 10px 10px 0 0;
       }
